@@ -2,24 +2,31 @@ body {
   font-family: "Oxanium", cursive;
   background:black;
   color: white;
+  overflow: hidden;
 }
 
 body::before{
   content: "" ;
-  background-image: url(../imagens/Desktop-shamelles.jpg);
+  background-image: url(../imagens/toy-story-3-andys-room.jpg);
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
   position: absolute;
-  z-index: -1;
-  opacity: 0.2;
+  z-index: -2;
+  opacity: 0.6;
 }
 
 .cabecalho {
   display: flex;
   justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
 }
 
 .selecao-de-personagens {
@@ -42,48 +49,59 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
   max-width: 585px ;
-  gap: 25px;
+  gap: 20px;
 }
 
 .selecao-de-personagens .personagens .titulo {
   font-size: 20px ;
   letter-spacing: 4px ;
   text-transform: uppercase ;
-  border-bottom: 2px solid turquoise;
+  border-bottom: 2px solid rgb(243, 232, 19);
   width: 100%;
+  max-width: 490px;
   text-align: center;
+  margin-top:-80px;
 }
 
 .lista-de-personagens .personagem img {
   width: 100%;
   height: 100%;
+  max-width: 100px;
+  border-radius: 10px;
 }
 
 .lista-de-personagens .personagem.selecionado {
-  box-shadow: 0px 0px 24px 5px  turquoise;
+  box-shadow: 0px 0px 20px 5px  rgba(183, 40, 40, 0.859);
+  border-radius: 10px;
 }
 
 .personagem-selecionado {
   text-align: center;
-  max-height: 530px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .personagem-selecionado .personagem-grande {
-  width: 430px;
-  height: 430px;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 250px;
+  margin-top: -100px;
 }
 
 .personagem-selecionado .nome-personagem {
-  border-bottom: 2px solid turquoise;
+  border-bottom: 2px solid rgb(243, 232, 19);
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .personagem-selecionado .descricao-personagem{
-font-size: 16px;
-line-height: 22px;
+font-size: 14px;
+line-height: 19px;
 text-align: center;
-margin-top: 20px;
-width: 420px;
+margin-top: 10px;
+width: 300px;
 }
-
